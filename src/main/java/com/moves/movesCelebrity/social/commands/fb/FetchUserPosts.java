@@ -38,6 +38,7 @@ public class FetchUserPosts implements Command<ArrayList<Document>, String> {
             if (response != null && !response.contains("error_code")) {
                 Document doc = Document.parse( response.toString() );
                 posts = (ArrayList<Document>) doc.get("data");
+
             }
         } catch (UnirestException e) {
             e.printStackTrace();
