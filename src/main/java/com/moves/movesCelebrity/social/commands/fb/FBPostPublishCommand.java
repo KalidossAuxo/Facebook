@@ -40,7 +40,7 @@ public class FBPostPublishCommand implements Command<Document,String> {
             String url = String.format(Constants.FB_PAGE_POSTS);
             httpResponse = Unirest.post(url).queryString("message",post).asJson();
 
-             doc =  Document.parse(httpResponse.getBody().toString());;
+            doc =  Document.parse(httpResponse.getBody().toString());
                // posts = (Document) doc.get("data");
             //System.out.println("Document response is : " + doc);
             //System.out.println("Post response is : " + posts);
