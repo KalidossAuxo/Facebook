@@ -52,6 +52,9 @@ public class Invoker {
 
             commands.put("fb.insights.posts.fetch" , new FBAccountInsightsFetchCommand());
             commands.put("fb.pagePosts.posts.fetch" , new FBPostFetchCommand());
+            commands.put("fb.accounts.posts.insights.fetch" , new FBAccountInsightsFetchCommand());
+            commands.put("fb.accounts.posts.publish.fetch" , new FBPostPublishCommand());
+            commands.put("fb.accounts.posts.publish.write" , new FBPostPublishWriteCommand());
             return commands;
         }).thenAccept(stringCommandMap -> logger.info("Commands registered " + commands.toString()));
     }

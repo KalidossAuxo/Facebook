@@ -10,11 +10,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class FBAccountInsightsFetchCommand implements Command<Document, String> {
 
-
-
-
     public FBAccountInsightsFetchCommand(){
-
     }
 
     @Override
@@ -32,7 +28,8 @@ public class FBAccountInsightsFetchCommand implements Command<Document, String> 
 
     private Document getInsights(String pageId) {
 
-        String url = String.format(Constants.FACEBOOK_ACCOUNT_INSIGHTS_URL, pageId);
+        //String url = String.format(Constants.FACEBOOK_ACCOUNT_INSIGHTS_URL, pageId);
+        String url = String.format(Constants.FACEBOOK_FETCH_ACCOUNT_INSIGHTS, pageId);
         String response = null;
         Document doc = null;
         try {
