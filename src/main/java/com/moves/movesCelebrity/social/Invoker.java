@@ -1,6 +1,10 @@
 package com.moves.movesCelebrity.social;
 
 import com.moves.movesCelebrity.social.commands.fb.*;
+import com.moves.movesCelebrity.social.restFB.FBGetUserDetailsByRestFB;
+import com.moves.movesCelebrity.social.restFB.FBGetUserPostsByRestFB;
+import com.moves.movesCelebrity.social.restFB.FBWriteUserDetailsByRestFB;
+import com.moves.movesCelebrity.social.restFB.FBWriteUserPostsByRestFB;
 import com.moves.movesCelebrity.social.types.Command;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,6 +59,15 @@ public class Invoker {
             commands.put("fb.accounts.posts.insights.fetch" , new FBAccountInsightsFetchCommand());
             commands.put("fb.accounts.posts.publish.fetch" , new FBPostPublishCommand());
             commands.put("fb.accounts.posts.publish.write" , new FBPostPublishWriteCommand());
+            commands.put("fb.accounts.posts.publish.media.fetch" , new FBPostPublishMediaCommand());
+            commands.put("fb.accounts.posts.publish.video.fetch" , new FBPostPublishVideoCommand());
+
+
+            //Commands for RestFB testing
+            commands.put("fb.posts.fetch.userDetails" , new FBGetUserDetailsByRestFB());
+            commands.put("fb.posts.write.userDetails" , new FBWriteUserDetailsByRestFB());
+            commands.put("fb.posts.fetch.userPosts" , new FBGetUserPostsByRestFB());
+            commands.put("fb.posts.write.userPosts" , new FBWriteUserPostsByRestFB());
             return commands;
         }).thenAccept(stringCommandMap -> logger.info("Commands registered " + commands.toString()));
     }

@@ -4,11 +4,11 @@ public class FBPost {
 
     String postId;
     String postContent;
-    Integer likesCount;
-    Integer shareCount;
-    Integer commentsCount;
+    Long likesCount;
+    Long shareCount;
+    Long commentsCount;
 
-    public FBPost(String postId, String postContent, Integer likesCount, Integer shareCount, Integer commentsCount) {
+    public FBPost(String postId, String postContent, Long likesCount, Long shareCount, Long commentsCount) {
         this.postId = postId;
         this.postContent = postContent;
         this.likesCount = likesCount;
@@ -35,27 +35,27 @@ public class FBPost {
         this.postContent = postContent;
     }
 
-    public Integer getLikesCount() {
+    public Long getLikesCount() {
         return likesCount;
     }
 
-    public void setLikesCount(Integer likesCount) {
+    public void setLikesCount(Long likesCount) {
         this.likesCount = likesCount;
     }
 
-    public Integer getShareCount() {
+    public Long getShareCount() {
         return shareCount;
     }
 
-    public void setShareCount(Integer shareCount) {
+    public void setShareCount(Long shareCount) {
         this.shareCount = shareCount;
     }
 
-    public Integer getCommentsCount() {
+    public Long getCommentsCount() {
         return commentsCount;
     }
 
-    public void setCommentsCount(Integer commentsCount) {
+    public void setCommentsCount(Long commentsCount) {
         this.commentsCount = commentsCount;
     }
 }
