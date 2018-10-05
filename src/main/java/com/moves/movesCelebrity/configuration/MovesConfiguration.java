@@ -20,8 +20,8 @@ public class MovesConfiguration extends Configuration {
     public static final String FB_PAGE_ID = "145143946118972";
     public static final String FB_APP_SECRET = "362308f4c8c529c4dc6b1304b9f8172b";
     public static final String FB_APP_ID = "2092026187719318";
-    public static final String FB_PAGE_ACCESS_TOKEN_EXTENDED = "EAAOpRugcj9MBAHJsdipaJpd3r5voMcwbZBwWEz22kZCZCA6nr1Sr8XFm3ykTXDlMRKgxe5dBHjXbZAdFUUirsyvm2gcwKElzbqzEz5YLIJ7f5RPGlFyg7ZCfYpfwNsahr7aZBR4TgmuCZBVqlasF6YPX4HGrZBFMkLb8Jo1cZCZAiocQZDZD";
-    public static final String FB_ACC_TOKEN_EXTENDED = "EAAVGQAvlMrMBALebT1TocJAPAodYueqx3UIHOhHAED89CJhAtZCNfZBZBpLAlgE3nlrVoPu4N9HmMvJZAPuz2ZCoCBq0ny6VgG9qZCwT3tjBO3tFZCuR8qPvSCavYnEBRonZAjICLmfWK3a1nf6MROccv2sjdqg1CGP6af4BdDVM6pOAyYz6on5O";
+    //public static final String FB_PAGE_ACCESS_TOKEN_EXTENDED = "EAAOpRugcj9MBAHJsdipaJpd3r5voMcwbZBwWEz22kZCZCA6nr1Sr8XFm3ykTXDlMRKgxe5dBHjXbZAdFUUirsyvm2gcwKElzbqzEz5YLIJ7f5RPGlFyg7ZCfYpfwNsahr7aZBR4TgmuCZBVqlasF6YPX4HGrZBFMkLb8Jo1cZCZAiocQZDZD";
+    public static final String FB_ACC_TOKEN_EXTENDED = "EAAOpRugcj9MBAOeWbuGiI1J2PWRGyR3D5XhmEWOOSMEGsH7BfUbwOFQ6IyNkLqq2IBwv1IUqZCgpzpRlUZBpjUp3ZAAg1Uim0RLTqxr22I21dgSWufi7sDGlfZAAlqxttrqZBDWIKnplBN0j0yYKj4ZC5AyBN95ucLwiWotFSXOAZDZD";
 
     public static final String FB_LIKED_PAGE_ID = "";
     public static final String FB_LIKED_PAGE_ACCESS_TOKEN_EXTENDED = "";

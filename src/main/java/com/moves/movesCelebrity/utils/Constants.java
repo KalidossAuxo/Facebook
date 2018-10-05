@@ -2,9 +2,7 @@ package com.moves.movesCelebrity.utils;
 
 import com.moves.movesCelebrity.configuration.MovesConfiguration;
 
-import static com.moves.movesCelebrity.configuration.MovesConfiguration.FB_ACC_TOKEN_EXTENDED;
-import static com.moves.movesCelebrity.configuration.MovesConfiguration.FB_PAGE_ACCESS_TOKEN_EXTENDED;
-import static com.moves.movesCelebrity.configuration.MovesConfiguration.FB_PAGE_ID;
+import static com.moves.movesCelebrity.configuration.MovesConfiguration.*;
 
 public class Constants {
 
@@ -19,7 +17,8 @@ public class Constants {
     public static final String FACEBOOK_FETCH_USER_DETAILS = FACEBOOK_GRAPH_API_URL + "me/?access_token="+MovesConfiguration.FB_ACC_TOKEN;
 
     public static final String FB_PAGE_ACCESS_TOKEN = FACEBOOK_GRAPH_API_URL+FB_PAGE_ID+"?fields=access_token&access_token="+FB_ACC_TOKEN_EXTENDED;
-
+    public static final String FB_PAGE_ACCESS_TOKEN_EXTENDED = FACEBOOK_GRAPH_API_URL+"/oauth/access_token?client_id="+FB_APP_ID +
+            "&client_secret="+FB_APP_SECRET+"&grant_type=fb_exchange_token&fb_exchange_token="+FB_PAGE_ACCESS_TOKEN;
     public static final String FB_PAGE_POSTS = FACEBOOK_GRAPH_API_URL + FB_PAGE_ID+"/feed?access_token="+ FB_PAGE_ACCESS_TOKEN_EXTENDED;
     public static final String FB_PAGE_POSTS_MEDIA = FACEBOOK_GRAPH_API_URL + FB_PAGE_ID+"/photos?access_token="+ FB_PAGE_ACCESS_TOKEN_EXTENDED;
     public static final String FB_PAGE_POSTS_VIDEO = FACEBOOK_GRAPH_VIDEO_API_URL + FB_PAGE_ID+"/videos?access_token="+ FB_PAGE_ACCESS_TOKEN_EXTENDED;
