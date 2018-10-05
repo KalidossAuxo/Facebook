@@ -4,23 +4,28 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.moves.movesCelebrity.configuration.MovesConfiguration;
 import com.moves.movesCelebrity.social.types.Command;
 import org.bson.Document;
 
-import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 
-public class FBUtils  {
+import static com.moves.movesCelebrity.utils.Constants.FB_PAGE_ACCESS_TOKEN;
+
+public class FBUtilsPageAccessToken implements Command<Document, String> {
+
+    @Override
+    public CompletableFuture<Document> execute(String pageId) {
+        return CompletableFuture.supplyAsync(() -> {
+            Document pageAccessToken = null;
+            pageAccessToken = getPageAccessToken();
+            return pageAccessToken;
+        });
+    }
 
 
+    public Document getPageAccessToken(){
 
-    public Document getExtendedPageToken(){
-
-        String url = String.format(Constants.FB_PAGE_AUTH_EXTENSION,
-                MovesConfiguration.FB_APP_ID,
-                MovesConfiguration.FB_APP_SECRET,
-                MovesConfiguration.FB_ACC_TOKEN);
+        String url = String.format(FB_PAGE_ACCESS_TOKEN);
 
         HttpResponse<JsonNode> httpResponse = null;
         try {
@@ -28,8 +33,7 @@ public class FBUtils  {
         } catch (UnirestException e) {
             e.printStackTrace();
         }
+        System.out.println(httpResponse.getBody().toString());
         return Document.parse(httpResponse.getBody().toString());
     }
-
-
 }
