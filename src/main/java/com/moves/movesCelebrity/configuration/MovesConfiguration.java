@@ -18,8 +18,8 @@ public class MovesConfiguration extends Configuration {
     public static final String COLLECTIONS_USER_DETAILS = "fb_user_basic_details";
     public static final String FB_ACC_TOKEN = "EAAOpRugcj9MBAOeWbuGiI1J2PWRGyR3D5XhmEWOOSMEGsH7BfUbwOFQ6IyNkLqq2IBwv1IUqZCgpzpRlUZBpjUp3ZAAg1Uim0RLTqxr22I21dgSWufi7sDGlfZAAlqxttrqZBDWIKnplBN0j0yYKj4ZC5AyBN95ucLwiWotFSXOAZDZD";
     public static final String FB_PAGE_ID = "145143946118972";
-    public static final String FB_APP_SECRET = "362308f4c8c529c4dc6b1304b9f8172b";
-    public static final String FB_APP_ID = "2092026187719318";
+    public static final String FB_APP_SECRET = "c5d0e7b731dff93c7bc7c62d5921edc1";
+    public static final String FB_APP_ID = "1030546937122771";
     //public static final String FB_PAGE_ACCESS_TOKEN_EXTENDED = "EAAOpRugcj9MBAHJsdipaJpd3r5voMcwbZBwWEz22kZCZCA6nr1Sr8XFm3ykTXDlMRKgxe5dBHjXbZAdFUUirsyvm2gcwKElzbqzEz5YLIJ7f5RPGlFyg7ZCfYpfwNsahr7aZBR4TgmuCZBVqlasF6YPX4HGrZBFMkLb8Jo1cZCZAiocQZDZD";
     public static final String FB_ACC_TOKEN_EXTENDED = "EAAOpRugcj9MBAOeWbuGiI1J2PWRGyR3D5XhmEWOOSMEGsH7BfUbwOFQ6IyNkLqq2IBwv1IUqZCgpzpRlUZBpjUp3ZAAg1Uim0RLTqxr22I21dgSWufi7sDGlfZAAlqxttrqZBDWIKnplBN0j0yYKj4ZC5AyBN95ucLwiWotFSXOAZDZD";
 
