@@ -29,6 +29,9 @@ public class Constants {
     public static final String FB_PAGE_POSTS_VIDEO = FACEBOOK_GRAPH_VIDEO_API_URL + FB_PAGE_ID+"/videos?access_token="+ FB_PAGE_AUTH_EXTENSION;
 
 
+    //To send a message to User Inbox(use feed instead of inbox to post a message in receiver wall)
+    public static final String FB_SEND_MESSAGE= FACEBOOK_GRAPH_API_URL+"%$1s/inbox?&access_token="+FB_ACC_TOKEN_EXTENDED;//{Receiver ID}
+
 
     public static final String FACEBOOK_FETCH_ACCOUNT_INSIGHTS = "https://graph.facebook.com/v3.1/%1$s/insights/?metric=page_fan_adds_unique,page_fan_adds&access_token="+ FB_PAGE_AUTH_EXTENSION;
     public static final String FB_LIKED_PAGE_POST_UPLOAD = FACEBOOK_GRAPH_API_URL +MovesConfiguration.FB_LIKED_PAGE_ID+"/feed?access_token="+ MovesConfiguration.FB_LIKED_PAGE_ACCESS_TOKEN_EXTENDED;

@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.moves.movesCelebrity.utils.Constants.FACEBOOK_GRAPH_API_URL;
+
 public class MovesConfiguration extends Configuration {
 
     public static final String COLLECTIONS_ACCOUNTS_USER_PAGES_LIST = "fb_user_pages";
@@ -30,6 +32,8 @@ public class MovesConfiguration extends Configuration {
 
      public static final String COLLECTION_FB_USER_DETAILS = "fbUserDetails";
      public static final String COLLECTION_FB_USER_POSTS = "fbUserPosts1";
+
+
 
     public static final String DB_NAME = "movesCelebrity";
     public static final Map<String, String> PLATFORM_MAP;
